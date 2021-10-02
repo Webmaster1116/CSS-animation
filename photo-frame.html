@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .wave {
+            float: left;
+            margin: 20px;
+            animation: wave 
+                       ease-in-out 
+                       0.5s 
+                       infinite 
+                       alternate;
+            transform-origin: center -20px;
+        }
+
+        .wave:hover {
+            animation-play-state: paused;
+        }
+
+        .wave img {
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 200px;
+            height: 250px;
+        }
+
+        .wave figcaption {
+            text-align: center;
+        }
+
+        .wave:after{
+            content: '';
+            position: absolute;
+            width: 20px; 
+            height: 20px;
+            border: 1.5px solid #ffffff;
+            top: -10px; 
+            left: 50%;
+            z-index: 0;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(45deg);
+        }
+       
+        .wave:before{
+            content: '';
+            position: absolute;
+            top: -23px;
+            left: 50%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(./images/screw-head.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+        }
+        
+        @keyframes wave {
+            0% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div style="margin-top: 20px;">
+        <figure class="wave">
+            <img src="./images/rajni_image.jpg" alt="rajni"></img>
+            <figcaption>Rajinikanth</figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="./images/chuckn_image.png" alt="chuck"></img>
+            <figcaption>Chuck Norris</figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="./images/jackiechan_image.png" alt="chan"></img>
+            <figcaption>Jackie Chan</figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="./images/bean.png" alt="bean"></img>
+            <figcaption>Mr. Bean</figcaption>
+        </figure>
+    </div>
+  </body>
+</html>
