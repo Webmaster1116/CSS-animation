@@ -8,7 +8,4 @@ Please feel free to clone the repo and try running it locally. This project is a
 
 # Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
-[![Stargazers repo roster for @atapas/learn-css-animation](https://reporoster.com/stars/atapas/learn-css-animation)](https://github.com/atapas/learn-css-animation/stargazers)
-
-
 <img src="images/photo%20gallery.png" alt="cover" />
